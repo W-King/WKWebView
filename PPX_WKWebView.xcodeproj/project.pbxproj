@@ -15,6 +15,11 @@
 		576F7ACF1D9CAD0B00E39485 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576F7ACD1D9CAD0B00E39485 /* LaunchScreen.storyboard */; };
 		576F7ADA1D9CAD0B00E39485 /* PPX_WKWebViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 576F7AD91D9CAD0B00E39485 /* PPX_WKWebViewTests.m */; };
 		576F7AE51D9CAD0B00E39485 /* PPX_WKWebViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 576F7AE41D9CAD0B00E39485 /* PPX_WKWebViewUITests.m */; };
+		576F7AF31D9CAF3C00E39485 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576F7AF21D9CAF3C00E39485 /* WebKit.framework */; };
+		576F7AF71D9CB26900E39485 /* PPX_WEWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 576F7AF61D9CB26900E39485 /* PPX_WEWebViewController.m */; };
+		576F7AF91D9CB7D100E39485 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576F7AF81D9CB7D100E39485 /* JavaScriptCore.framework */; };
+		576F7AFF1D9CC48400E39485 /* PPX_WebProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 576F7AFC1D9CC48400E39485 /* PPX_WebProgressView.m */; };
+		576F7B001D9CC48400E39485 /* PPX_WebViewProress.m in Sources */ = {isa = PBXBuildFile; fileRef = 576F7AFE1D9CC48400E39485 /* PPX_WebViewProress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,14 @@
 		576F7AE01D9CAD0B00E39485 /* PPX_WKWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPX_WKWebViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		576F7AE41D9CAD0B00E39485 /* PPX_WKWebViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPX_WKWebViewUITests.m; sourceTree = "<group>"; };
 		576F7AE61D9CAD0B00E39485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		576F7AF21D9CAF3C00E39485 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		576F7AF51D9CB26900E39485 /* PPX_WEWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPX_WEWebViewController.h; sourceTree = "<group>"; };
+		576F7AF61D9CB26900E39485 /* PPX_WEWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPX_WEWebViewController.m; sourceTree = "<group>"; };
+		576F7AF81D9CB7D100E39485 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		576F7AFB1D9CC48400E39485 /* PPX_WebProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPX_WebProgressView.h; sourceTree = "<group>"; };
+		576F7AFC1D9CC48400E39485 /* PPX_WebProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPX_WebProgressView.m; sourceTree = "<group>"; };
+		576F7AFD1D9CC48400E39485 /* PPX_WebViewProress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPX_WebViewProress.h; sourceTree = "<group>"; };
+		576F7AFE1D9CC48400E39485 /* PPX_WebViewProress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPX_WebViewProress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				576F7AF91D9CB7D100E39485 /* JavaScriptCore.framework in Frameworks */,
+				576F7AF31D9CAF3C00E39485 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 		576F7AB31D9CAD0B00E39485 = {
 			isa = PBXGroup;
 			children = (
+				576F7AF81D9CB7D100E39485 /* JavaScriptCore.framework */,
+				576F7AF21D9CAF3C00E39485 /* WebKit.framework */,
 				576F7ABE1D9CAD0B00E39485 /* PPX_WKWebView */,
 				576F7AD81D9CAD0B00E39485 /* PPX_WKWebViewTests */,
 				576F7AE31D9CAD0B00E39485 /* PPX_WKWebViewUITests */,
@@ -101,6 +118,8 @@
 		576F7ABE1D9CAD0B00E39485 /* PPX_WKWebView */ = {
 			isa = PBXGroup;
 			children = (
+				576F7AFA1D9CC48400E39485 /* Progress */,
+				576F7AF41D9CB25B00E39485 /* PPX_WEWebViewController */,
 				576F7AC21D9CAD0B00E39485 /* AppDelegate.h */,
 				576F7AC31D9CAD0B00E39485 /* AppDelegate.m */,
 				576F7AC51D9CAD0B00E39485 /* ViewController.h */,
@@ -138,6 +157,26 @@
 				576F7AE61D9CAD0B00E39485 /* Info.plist */,
 			);
 			path = PPX_WKWebViewUITests;
+			sourceTree = "<group>";
+		};
+		576F7AF41D9CB25B00E39485 /* PPX_WEWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				576F7AF51D9CB26900E39485 /* PPX_WEWebViewController.h */,
+				576F7AF61D9CB26900E39485 /* PPX_WEWebViewController.m */,
+			);
+			path = PPX_WEWebViewController;
+			sourceTree = "<group>";
+		};
+		576F7AFA1D9CC48400E39485 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				576F7AFB1D9CC48400E39485 /* PPX_WebProgressView.h */,
+				576F7AFC1D9CC48400E39485 /* PPX_WebProgressView.m */,
+				576F7AFD1D9CC48400E39485 /* PPX_WebViewProress.h */,
+				576F7AFE1D9CC48400E39485 /* PPX_WebViewProress.m */,
+			);
+			path = Progress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				576F7AFF1D9CC48400E39485 /* PPX_WebProgressView.m in Sources */,
+				576F7AF71D9CB26900E39485 /* PPX_WEWebViewController.m in Sources */,
 				576F7AC71D9CAD0B00E39485 /* ViewController.m in Sources */,
 				576F7AC41D9CAD0B00E39485 /* AppDelegate.m in Sources */,
 				576F7AC11D9CAD0B00E39485 /* main.m in Sources */,
+				576F7B001D9CC48400E39485 /* PPX_WebViewProress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +540,7 @@
 				576F7AEB1D9CAD0B00E39485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		576F7AEC1D9CAD0B00E39485 /* Build configuration list for PBXNativeTarget "PPX_WKWebViewTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +549,7 @@
 				576F7AEE1D9CAD0B00E39485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		576F7AEF1D9CAD0B00E39485 /* Build configuration list for PBXNativeTarget "PPX_WKWebViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +558,7 @@
 				576F7AF11D9CAD0B00E39485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
